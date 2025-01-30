@@ -6,7 +6,7 @@ interface MaintenanceBannerProps {
 }
 
 const MaintenanceBanner = ({ className }: MaintenanceBannerProps) => {
-  const bannerText = "Opgelet, MijnFAVV zal voor onderhoudswerken van 25/12/2024 23:00 tot en met 26/12/2024 08:00 niet beschikbaar zijn. Gelieve ons te contacteren voor dringende hulp.";
+  const bannerText = "Opgelet, MijnFAVV zal voor onderhoudswerken van 25/12/2024 23:00 tot en met 26/12/2024 08:00 niet beschikbaar zijn. Gelieve ons te ";
   
   return (
     <div className={cn(
@@ -18,7 +18,7 @@ const MaintenanceBanner = ({ className }: MaintenanceBannerProps) => {
           <AlertCircle className="h-4 w-4 text-red-600 shrink-0" />
           <span className="text-red-900 text-sm">
             {bannerText}
-            <a href="#contact" className="text-red-700 hover:text-red-800 underline ml-1">
+            <a href="#contact" className="text-red-700 hover:text-red-800 underline">
               contacteren
             </a>
           </span>
@@ -28,7 +28,7 @@ const MaintenanceBanner = ({ className }: MaintenanceBannerProps) => {
           <AlertCircle className="h-4 w-4 text-red-600 shrink-0" />
           <span className="text-red-900 text-sm">
             {bannerText}
-            <a href="#contact" className="text-red-700 hover:text-red-800 underline ml-1">
+            <a href="#contact" className="text-red-700 hover:text-red-800 underline">
               contacteren
             </a>
           </span>
