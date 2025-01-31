@@ -89,10 +89,10 @@
     transform: translateX(0);
   }
   to {
-    transform: translateX(-50%);
+    transform: translateX(-75%);
   }
 }
 
 .animate-banner {
-  animation: banner 15s linear infinite;
+  animation: banner 30s linear infinite;
 }
