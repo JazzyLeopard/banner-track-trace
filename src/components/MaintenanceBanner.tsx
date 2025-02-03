@@ -9,9 +9,9 @@ const MaintenanceBanner = ({ className }: MaintenanceBannerProps) => {
   const bannerText = "Opgelet, MijnFAVV zal voor onderhoudswerken van 25/12/2024 23:00 tot en met 26/12/2024 08:00 niet beschikbaar zijn. Gelieve ons te contacteren voor dringende hulp.";
   
   const bannerStyles = [
-    "bg-red-100/80 border-y-1 border-red-300", // Red with darker red border
-    "bg-amber-100/80 border-y-1 border-amber-300", // Amber with darker amber border
-    "bg-sky-100/80 border-y-1 border-sky-300", // Sky blue with darker sky blue border
+    "bg-red-100/80 border-y-2 border-red-300", // Red with darker red border
+    "bg-amber-100/80 border-y-2 border-amber-300", // Amber with darker amber border
+    "bg-sky-100/80 border-y-2 border-sky-300", // Sky blue with darker sky blue border
   ];
 
   return (
