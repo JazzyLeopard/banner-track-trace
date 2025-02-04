@@ -95,4 +95,22 @@
 
 .animate-banner {
   animation: banner 30s linear infinite;
+  animation-play-state: running;
+  /* Pause animation when window is not in view */
+  animation-timeline: scroll();
+  /* Make animation distance based on content width */
+  animation-range: 0 100%;
+}
+
+@keyframes banner {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-banner {
+  animation: banner 30s linear infinite;
 }
