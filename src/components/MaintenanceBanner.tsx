@@ -25,7 +25,7 @@ const MaintenanceBanner = ({ className }: MaintenanceBannerProps) => {
 
   return (
     <div className={cn(
-      "overflow-hidden relative h-full",
+      "overflow-hidden relative h-full w-full",
       className
     )}>
       <div className="animate-banner flex whitespace-nowrap items-stretch h-full">
@@ -34,7 +34,7 @@ const MaintenanceBanner = ({ className }: MaintenanceBannerProps) => {
             key={index}
             className={cn(
               style.container,
-              "flex items-center gap-2 px-4 py-2 min-w-full h-full",
+              "flex items-center gap-2 px-4 py-2 min-w-max h-full",
               index > 0 && "ml-[100%]"
             )}
           >
@@ -47,7 +47,7 @@ const MaintenanceBanner = ({ className }: MaintenanceBannerProps) => {
         {/* Duplicate first banner to create seamless loop */}
         <div className={cn(
           bannerStyles[0].container,
-          "flex items-center gap-2 px-4 py-2 min-w-full h-full ml-[100%]"
+          "flex items-center gap-2 px-4 py-2 min-w-max h-full ml-[100%]"
         )}>
           <AlertCircle className={cn("h-4 w-4 shrink-0", bannerStyles[0].icon)} />
           <span className="text-black text-sm">
