@@ -102,6 +102,15 @@
   animation-range: 0 100%;
 }
 
-.animate-banner:hover {
-  animation-play-state: paused;
+@keyframes banner {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-banner {
+  animation: banner 30s linear infinite;
 }
