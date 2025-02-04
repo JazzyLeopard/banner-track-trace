@@ -11,15 +11,15 @@ const MaintenanceBanner = ({ className }: MaintenanceBannerProps) => {
   const bannerStyles = [
     {
       container: "bg-red-100/80 border-y-2 border-red-300",
-      icon: "text-red-600"
+      icon: "text-red-300"
     },
     {
       container: "bg-amber-100/80 border-y-2 border-amber-300",
-      icon: "text-amber-600"
+      icon: "text-amber-300"
     },
     {
       container: "bg-sky-100/80 border-y-2 border-sky-300",
-      icon: "text-sky-600"
+      icon: "text-sky-300"
     }
   ];
 
@@ -34,7 +34,8 @@ const MaintenanceBanner = ({ className }: MaintenanceBannerProps) => {
             key={index}
             className={cn(
               style.container,
-              "flex items-center gap-2 px-4 py-2 min-w-full h-full"
+              "flex items-center gap-2 px-4 py-2 min-w-full h-full",
+              index > 0 && "ml-[100%]"
             )}
           >
             <AlertCircle className={cn("h-4 w-4 shrink-0", style.icon)} />
@@ -46,7 +47,7 @@ const MaintenanceBanner = ({ className }: MaintenanceBannerProps) => {
         {/* Duplicate first banner to create seamless loop */}
         <div className={cn(
           bannerStyles[0].container,
-          "flex items-center gap-2 px-4 py-2 min-w-full h-full"
+          "flex items-center gap-2 px-4 py-2 min-w-full h-full ml-[100%]"
         )}>
           <AlertCircle className={cn("h-4 w-4 shrink-0", bannerStyles[0].icon)} />
           <span className="text-black text-sm">
