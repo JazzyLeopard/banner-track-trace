@@ -6,7 +6,7 @@ interface MaintenanceBannerProps {
 }
 
 const MaintenanceBanner = ({ className }: MaintenanceBannerProps) => {
-  const bannerText = "Opgelet, MijnFAVV zal voor onderhoudswerken van 25/12/2024 23:00 tot en met 26/12/2024 08:00 niet beschikbaar zijn. Gelieve ons te contacteren voor dringende hulp.";
+  const bannerText = "Belangrijk bericht voor alle gebruikers: MijnFAVV zal tijdelijk niet beschikbaar zijn voor geplande onderhoudswerken. Deze onderbreking is gepland van 25/12/2024 23:00 tot en met 26/12/2024 08:00. Tijdens deze periode zullen we belangrijke systeemupdates en verbeteringen doorvoeren om de kwaliteit en betrouwbaarheid van onze dienstverlening te waarborgen. We raden u aan om eventuele dringende zaken voor of na deze periode te plannen. Voor noodgevallen of dringende assistentie tijdens de onderhoudsperiode kunt u contact opnemen met onze 24/7 helpdesk. Wij danken u voor uw begrip en geduld.";
   
   const bannerStyles = [
     {
