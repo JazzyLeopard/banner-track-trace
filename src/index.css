@@ -94,7 +94,7 @@
 }
 
 .animate-banner {
-  animation: banner 30s linear infinite;
+  animation: banner 45s linear infinite; /* Increased from 30s to 45s to slow down the animation */
 }
 
 .animate-banner:hover {
