@@ -86,15 +86,15 @@
 
 @keyframes banner {
   0% {
-    transform: translateX(100%);
+    transform: translateX(0%);
   }
   100% {
-    transform: translateX(-100%);
+    transform: translateX(-50%);
   }
 }
 
 .animate-banner {
-  animation: banner 45s linear infinite; /* Increased from 30s to 45s to slow down the animation */
+  animation: banner 60s linear infinite;
 }
 
 .animate-banner:hover {
