@@ -23,7 +23,7 @@ const MaintenanceBanner = ({ className }: MaintenanceBannerProps) => {
   return (
     <div
       className={cn(
-        "h-10 overflow-hidden relative w-full bg-red-100/80 border-y-2 border-red-300 flex items-center", // Reduced height, added flex and items-center
+        "h-10 overflow-hidden relative w-full bg-red-100/80 border-y-2 border-red-300 flex items-center",
         className
       )}
     >
