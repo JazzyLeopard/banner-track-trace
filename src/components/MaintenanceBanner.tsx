@@ -23,11 +23,11 @@ const MaintenanceBanner = ({ className }: MaintenanceBannerProps) => {
   return (
     <div
       className={cn(
-        "h-12 overflow-hidden relative w-full bg-red-100/80 border-y-2 border-red-300",
+        "h-10 overflow-hidden relative w-full bg-red-100/80 border-y-2 border-red-300 flex items-center", // Reduced height, added flex and items-center
         className
       )}
     >
-      <div className="animate-banner flex items-center whitespace-nowrap">
+      <div className="animate-banner flex items-center whitespace-nowrap w-full">
         <div className="flex items-center min-w-max">
           {notifications.map((notification, index) => (
             <div key={index} className="flex items-center">
